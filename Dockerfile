@@ -5,6 +5,5 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY honest_validation_v2.py .
-
-CMD ["python", "honest_validation_v2.py"]
+   COPY honest_validation_v3.py .
+   CMD ["python", "honest_validation_v3.py"]
